@@ -1,0 +1,10 @@
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\bin\Debug\PracticeCoding.exe.config
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\bin\Debug\PracticeCoding.exe
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\bin\Debug\PracticeCoding.pdb
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.csprojAssemblyReference.cache
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.Form1.resources
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.Properties.Resources.resources
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.csproj.GenerateResource.cache
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.csproj.CoreCompileInputs.cache
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.exe
+C:\Users\Anders\source\repos\PracticeCoding\PracticeCoding\obj\Debug\PracticeCoding.pdb
