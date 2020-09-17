@@ -25,10 +25,13 @@ namespace PracticeCoding
         private void drawCardPlayer_Click(object sender, EventArgs e)
         {
             b.drawBlackJackPlayer(b.PlayersCards, c.cards);
+            b.drawBlackJackDealer(b.DealerCards, c.cards);
 
             label2.Text = b.playerSumPoints(b.PlayersCards).ToString();
+            label4.Text = b.dealerSumPoints(b.DealerCards).ToString();
 
             listBox1.Items.Clear();
+            listBox2.Items.Clear();
 
             foreach (Cards item in b.PlayersCards)
             {
@@ -37,6 +40,14 @@ namespace PracticeCoding
                     listBox1.Items.Add(item.Images + " " + item.Type + " " + item.Value);
                 }
 
+            }
+
+            foreach (Cards item in b.DealerCards)
+            {
+                if (item != null)
+                {
+                    listBox2.Items.Add(item.Images + " " + item.Type + " " + item.Value);
+                }
             }
         }
 

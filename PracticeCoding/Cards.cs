@@ -13,6 +13,7 @@ namespace PracticeCoding
         public string Type { get; set; }
         public string Images { get; set; }
 
+        public int[] cardCheck = new int[52];
         public Cards[] cards = new Cards[52];
 
         private static Random rnd;
@@ -36,21 +37,32 @@ namespace PracticeCoding
 
             return " ";
         }
-        
+
+        public bool drawCheck(int a)
+        {
+            for (int i = 0; i < cardCheck.Length; i++)
+            {
+                if (a == cardCheck[i])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public void generateDeck()
         {
             string speccount = "";
             string image = "";
             int count = 0;
-            int id = 0;
             int secondcount = 1;
             int start = 0;
             int set = 13;
-            while(count <= 3)
+            while (count <= 3)
             {
                 for (int i = start; i < set; i++)
                 {
-                    cards[i] =  new Cards { Id = generateId(id) ,Value = secondcount, Type = generateType(speccount, count), Images = generateImages(image, secondcount) } ;
+                    cards[i] = new Cards { Id = generateId(i), Value = secondcount, Type = generateType(speccount, count), Images = generateImages(image, secondcount) };
                     secondcount++;
                 }
                 start = set;
@@ -88,15 +100,15 @@ namespace PracticeCoding
 
         public string generateImages(string a, int b)
         {
-            if(b == 1)
+            if (b == 1)
             {
                 return a = "Ace of";
             }
-            else if(b == 2)
+            else if (b == 2)
             {
                 return a = "Two of";
             }
-            else if(b == 3)
+            else if (b == 3)
             {
                 return a = "Three of";
             }
@@ -128,15 +140,15 @@ namespace PracticeCoding
             {
                 return a = "Tenth of";
             }
-            else if(b == 11)
+            else if (b == 11)
             {
                 return a = "Jack of";
             }
-            else if(b == 12)
+            else if (b == 12)
             {
                 return a = "Queen of";
             }
-            else if(b == 13)
+            else if (b == 13)
             {
                 return a = "King of";
             }
@@ -144,7 +156,7 @@ namespace PracticeCoding
         }
 
         public int generateNumber()
-        {           
+        {
             int a = rnd.Next(0, 51);
 
             return a;
